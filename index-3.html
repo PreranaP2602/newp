@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S Prerana Priyadarshini | Biostatistician & PhD Applicant in Epidemiology</title>
+<meta name="description" content="Academic portfolio of S Prerana Priyadarshini, biostatistician (M.Sc. Biostatistics and Demography, IIPS Mumbai) applying to doctoral programs in Epidemiology.">
+<meta name="author" content="S Prerana Priyadarshini">
+<meta name="theme-color" content="#FAF6EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF6EC;
+  --ivory-2:#F3ECDC;
+  --paper:#FFFDF8;
+  --navy:#14213D;
+  --navy-soft:#3A4660;
+  --burgundy:#7B1E3A;
+  --burgundy-dark:#5E1429;
+  --line:#E2D8C3;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(20,33,61,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ivory);color:var(--navy);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:var(--burgundy);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--burgundy-dark)}
+:focus-visible{outline:3px solid var(--burgundy);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;z-index:200}
+.skip:focus{left:8px;color:#fff}
+.container{width:min(1080px,100% - 40px);margin-inline:auto}
+section{padding:96px 0}
+.alt{background:var(--ivory-2)}
+.eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--burgundy);margin:0 0 10px}
+h1,h2,h3{font-family:var(--serif);color:var(--navy);line-height:1.15;margin:0}
+h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:600}
+h2::after{content:"";display:block;width:56px;height:3px;background:var(--burgundy);margin:18px 0 0;border-radius:2px}
+h3{font-size:1.45rem;font-weight:700}
+.section-head{margin-bottom:48px}
+p{margin:0 0 1em}
+.muted{color:var(--navy-soft)}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:100;background:rgba(250,246,236,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.3rem;color:var(--navy);text-decoration:none;letter-spacing:.01em}
+.brand span{color:var(--burgundy)}
+.menu{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.menu a{display:block;padding:8px 12px;border-radius:8px;color:var(--navy);text-decoration:none;font-size:.9rem;font-weight:500;transition:background .2s,color .2s}
+.menu a:hover{background:rgba(123,30,58,.08);color:var(--burgundy)}
+.menu a.active{color:var(--burgundy);box-shadow:inset 0 -2px 0 var(--burgundy);border-radius:0}
+.toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--navy)}
+.toggle span,.toggle span::before,.toggle span::after{display:block;width:20px;height:2px;background:currentColor;position:relative;margin:auto;transition:transform .25s,background .25s}
+.toggle span::before,.toggle span::after{content:"";position:absolute;left:0}
+.toggle span::before{top:-6px}.toggle span::after{top:6px}
+.toggle[aria-expanded="true"] span{background:transparent}
+.toggle[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.toggle[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* Hero */
+.hero{padding:88px 0 96px;background:
+  radial-gradient(900px 400px at 85% -10%,rgba(123,30,58,.09),transparent 60%),
+  var(--ivory)}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:700;letter-spacing:-.01em}
+.headline{font-family:var(--serif);font-size:clamp(1.25rem,2.4vw,1.65rem);color:var(--burgundy);font-style:italic;margin:16px 0 22px}
+.lead{font-size:1.12rem;color:var(--navy-soft);max-width:60ch}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:2px solid var(--burgundy);transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn.primary{background:var(--burgundy);color:#fff}
+.btn.primary:hover{background:var(--burgundy-dark);border-color:var(--burgundy-dark);color:#fff;transform:translateY(-2px);box-shadow:0 8px 18px rgba(123,30,58,.25)}
+.btn.ghost{background:transparent;color:var(--burgundy)}
+.btn.ghost:hover{background:var(--burgundy);color:#fff;transform:translateY(-2px)}
+.monogram{width:min(300px,70vw);aspect-ratio:1;margin-inline:auto;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);position:relative}
+.monogram::before{content:"";position:absolute;inset:14px;border:1.5px solid var(--burgundy);border-radius:50%;opacity:.55}
+.monogram::after{content:"";position:absolute;inset:26px;border:1px solid var(--line);border-radius:50%}
+.monogram b{font-family:var(--serif);font-size:clamp(4rem,10vw,6.2rem);color:var(--navy);font-weight:600;letter-spacing:.04em;position:relative;z-index:1}
+.monogram b i{color:var(--burgundy);font-style:normal}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;list-style:none;padding:0}
+.facts li{font-size:.84rem;padding:6px 14px;border:1px solid var(--line);background:var(--paper);border-radius:999px;color:var(--navy-soft)}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.stat-card h3{font-size:1.2rem;margin-bottom:14px}
+.stat-card dl{margin:0}
+.stat-card dt{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--burgundy);font-weight:600;margin-top:14px}
+.stat-card dd{margin:2px 0 0}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;height:100%;width:4px;background:var(--burgundy);opacity:0;transition:opacity .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d6c9ac}
+.card:hover::before{opacity:1}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+.card p{margin:0;color:var(--navy-soft);font-size:.98rem}
+.interest-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{display:inline-block;padding:7px 15px;border-radius:999px;background:rgba(123,30,58,.08);color:var(--burgundy-dark);font-size:.87rem;font-weight:500;border:1px solid rgba(123,30,58,.18)}
+.chip.plain{background:var(--paper);color:var(--navy);border-color:var(--line)}
+
+/* Timeline */
+.timeline{position:relative;margin:0;padding:0 0 0 30px;list-style:none}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--burgundy),var(--line))}
+.timeline li{position:relative;padding:0 0 34px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-30px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--ivory);border:3px solid var(--burgundy)}
+.alt .timeline li::before{background:var(--ivory-2)}
+.year{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--burgundy)}
+.timeline h3{font-size:1.4rem;margin:2px 0 2px}
+.timeline .where{color:var(--navy-soft);margin:0}
+.score{display:inline-block;margin-top:8px;font-size:.85rem;padding:3px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+
+/* Projects */
+.project{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:32px;margin-bottom:24px;transition:box-shadow .25s,transform .25s}
+.project:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.project.featured{border-left:5px solid var(--burgundy)}
+.tag{display:inline-block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--burgundy);margin-bottom:6px}
+.project h3{margin-bottom:6px}
+.project .meta{color:var(--navy-soft);font-size:.95rem;margin-bottom:14px}
+.project ul{margin:0 0 14px;padding-left:20px}
+.project li{margin-bottom:6px}
+.methods{display:flex;flex-wrap:wrap;gap:8px}
+
+/* Experience */
+.role{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+.role-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;margin-bottom:6px}
+.role .dates{font-weight:600;color:var(--burgundy);font-size:.95rem}
+.role ul{padding-left:20px;margin:16px 0 0}
+.role li{margin-bottom:12px}
+.role li strong{color:var(--navy)}
+
+/* Skills */
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.skill-box{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.skill-box h3{font-size:1.2rem;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.skill-box .interest-list{margin-top:0}
+
+/* Records */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.record-group h3{margin-bottom:20px;font-size:1.5rem}
+.record{padding:0 0 22px 20px;border-left:2px solid var(--line);margin-bottom:6px;position:relative;transition:border-color .2s}
+.record:hover{border-color:var(--burgundy)}
+.record .year{display:block}
+.record p{margin:2px 0 0}
+.record .title{font-weight:600;color:var(--navy)}
+.record .detail{color:var(--navy-soft);font-size:.95rem}
+
+/* Contact */
+.contact-box{background:var(--navy);color:#F3ECDC;border-radius:20px;padding:56px 44px;text-align:center;position:relative;overflow:hidden}
+.contact-box::before{content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;border-radius:50%;border:1.5px solid rgba(250,246,236,.18)}
+.contact-box h2{color:#FAF6EC}
+.contact-box h2::after{margin-inline:auto;background:#E3A6B7}
+.contact-box .eyebrow{color:#E3A6B7}
+.contact-box p{max-width:56ch;margin-inline:auto;color:#E7DEC8}
+.contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:28px}
+.contact-box .btn.primary{background:#FAF6EC;color:var(--burgundy-dark);border-color:#FAF6EC}
+.contact-box .btn.primary:hover{background:#fff;color:var(--burgundy-dark)}
+.contact-box .btn.ghost{color:#FAF6EC;border-color:#FAF6EC}
+.contact-box .btn.ghost:hover{background:#FAF6EC;color:var(--navy)}
+
+footer{padding:34px 0;text-align:center;font-size:.88rem;color:var(--navy-soft);border-top:1px solid var(--line)}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.no-js .reveal{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .hero-grid,.about-grid,.two-col{grid-template-columns:1fr}
+  .hero-grid .monogram{order:-1;width:200px}
+  .toggle{display:block}
+  .menu{position:absolute;left:0;right:0;top:68px;flex-direction:column;background:var(--ivory);border-bottom:1px solid var(--line);padding:10px 20px 18px;gap:0;display:none;box-shadow:0 14px 24px rgba(20,33,61,.08)}
+  .menu.open{display:flex}
+  .menu a{padding:13px 8px;border-bottom:1px solid var(--line);border-radius:0}
+  .menu a.active{box-shadow:none}
+  section{padding:68px 0}
+  .contact-box{padding:44px 24px}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .btn{width:100%;justify-content:center}
+  .project,.role{padding:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
+@media print{
+  header.site,.toggle,.btns{display:none}
+  .reveal{opacity:1;transform:none}
+  section{padding:30px 0}
+}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="S Prerana Priyadarshini, home">S Prerana <span>Priyadarshini</span></a>
+    <button class="toggle" id="menuToggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation menu"><span></span></button>
+    <nav aria-label="Primary">
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#records">Record</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HOME -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <p class="eyebrow">PhD Applicant &middot; Epidemiology</p>
+      <h1 id="hero-title">S Prerana Priyadarshini</h1>
+      <p class="headline">Biostatistician and aspiring doctoral researcher in epidemiology</p>
+      <p class="lead">I hold an M.Sc. in Biostatistics and Demography from the International Institute for Population Sciences, Mumbai, and currently serve as Statistical Officer and Subject Matter Expert Instructor at Hi-Tech Medical College &amp; Hospital, Bhubaneswar. My work applies multilevel and multivariate methods to national survey data on reproductive health, maternal care, and population health, and I am seeking a doctoral program in epidemiology where I can deepen this research.</p>
+      <div class="btns">
+        <a class="btn primary" href="#research">Explore My Research</a>
+        <a class="btn ghost" href="cv.pdf" download>Download CV</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+      <ul class="facts" aria-label="Quick facts">
+        <li>M.Sc. Biostatistics &amp; Demography, IIPS</li>
+        <li>UGC-NET qualified (2025)</li>
+        <li>IELTS Academic qualified (2026)</li>
+      </ul>
+    </div>
+    <div class="monogram reveal" role="img" aria-label="Monogram of the initials S P"><b>S<i>P</i></b></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="alt" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="reveal">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">From population data to public health evidence</h2>
+      </div>
+      <p>I am a biostatistician trained in statistics, biostatistics, and demography. My undergraduate degree in Statistics at Ramadevi Women&rsquo;s University, Bhubaneswar, gave me a rigorous quantitative foundation, and my M.Sc. at the International Institute for Population Sciences (IIPS), Mumbai, supported by an Institute Fellowship, turned that foundation toward population and health questions.</p>
+      <p>My research so far has used national datasets, including the National Family Health Survey (NFHS), to study infertility, teenage marriage and pregnancy, antenatal care utilization, and the effect of COVID-19 on life expectancy in India. Across these projects I have worked on identifying the sociodemographic and health factors behind important outcomes and on turning the findings into recommendations for targeted action.</p>
+      <p>In my current role at Hi-Tech Medical College &amp; Hospital I advise institutional leadership on statistical matters and guide students and researchers in research design and analysis. This work has strengthened my interest in a career centered on epidemiologic research, and I am now applying to doctoral programs in epidemiology to build the methodological depth and independence needed to lead such work.</p>
+    </div>
+    <aside class="stat-card reveal" aria-label="At a glance">
+      <h3>At a glance</h3>
+      <dl>
+        <dt>Current position</dt>
+        <dd>Statistical Officer and Subject Matter Expert Instructor, Hi-Tech Medical College &amp; Hospital, Bhubaneswar</dd>
+        <dt>Highest degree</dt>
+        <dd>M.Sc. Biostatistics and Demography, IIPS Mumbai (2025)</dd>
+        <dt>Seeking</dt>
+        <dd>PhD in Epidemiology</dd>
+        <dt>Languages</dt>
+        <dd>English, Hindi, Odia</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- RESEARCH INTERESTS -->
+<section id="interests" aria-labelledby="interests-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Research Interests</p>
+      <h2 id="interests-title">Where my questions come from</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <h3>Epidemiology &amp; Public Health Policy</h3>
+        <p>Using population-level evidence to understand disease burden and health inequities, and to inform policy and targeted interventions.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Reproductive &amp; Maternal Health</h3>
+        <p>Infertility and its links to sociodemographic, lifestyle, and non-communicable disease factors; teenage marriage and pregnancy; and inequality in antenatal care utilization.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Mortality &amp; Population Health</h3>
+        <p>Demographic measures such as life expectancy, including the national-level impact of the COVID-19 pandemic in India.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Advanced Statistical Methods</h3>
+        <p>Multilevel modeling, multivariate analysis, and survival analysis applied to health data, with attention to clear data visualization.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Systems Biology &amp; Multidisciplinary Statistics</h3>
+        <p>An interest in connecting statistics with biological systems and with other disciplines to understand health outcomes more completely.</p>
+      </article>
+    </div>
+    <div class="interest-list reveal" aria-label="Keywords">
+      <span class="chip">Epidemiology</span><span class="chip">Biostatistics</span><span class="chip">Demography</span><span class="chip">Reproductive health</span><span class="chip">Non-communicable diseases</span><span class="chip">Healthcare</span><span class="chip">Public health policy</span><span class="chip">NFHS data</span>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="alt" id="education" aria-labelledby="edu-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Education</p>
+      <h2 id="edu-title">Academic timeline</h2>
+    </div>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="year">2023 &ndash; 2025</span>
+        <h3>M.Sc. Biostatistics and Demography</h3>
+        <p class="where">International Institute for Population Sciences (IIPS), Mumbai</p>
+        <span class="score">CGPA 7.57</span>
+        <p class="muted" style="margin-top:10px">Institute Fellowship recipient for the duration of the M.Sc. program. Dissertation on infertility in India.</p>
+      </li>
+      <li class="reveal">
+        <span class="year">2023</span>
+        <h3>B.Sc. Statistics</h3>
+        <p class="where">Ramadevi Women&rsquo;s University, Bhubaneswar</p>
+        <span class="score">CGPA 9</span>
+      </li>
+      <li class="reveal">
+        <span class="year">2020</span>
+        <h3>All India Senior School Certificate Examination (Class XII)</h3>
+        <p class="where">DAV Public School, Bhubaneswar</p>
+        <span class="score">81%</span>
+      </li>
+      <li class="reveal">
+        <span class="year">2018</span>
+        <h3>All India Secondary School Examination (Class X)</h3>
+        <p class="where">DAV Public School, Bhubaneswar</p>
+        <span class="score">84.4%</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- RESEARCH & PROJECTS -->
+<section id="research" aria-labelledby="research-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Research and Projects</p>
+      <h2 id="research-title">Dissertation, internship, and project work</h2>
+    </div>
+
+    <article class="project featured reveal">
+      <span class="tag">Master&rsquo;s Dissertation &middot; 2025</span>
+      <h3>A Regional Perspective on Infertility in India: Examining the Role of Sociodemographic, Lifestyle Factors, and Non-Communicable Diseases</h3>
+      <p class="meta">International Institute for Population Sciences, Mumbai</p>
+      <ul>
+        <li>Derived interrelated factors within a unified framework to identify the root causes of infertility.</li>
+        <li>Suggested recommendations for targeted interventions to improve reproductive health.</li>
+      </ul>
+      <div class="methods"><span class="chip plain">Infertility</span><span class="chip plain">Sociodemographic factors</span><span class="chip plain">Lifestyle factors</span><span class="chip plain">Non-communicable diseases</span></div>
+    </article>
+
+    <article class="project reveal">
+      <span class="tag">Internship &middot; 2024</span>
+      <h3>Teenage Marriage and Pregnancy in India: A District-Level Analysis</h3>
+      <p class="meta">Indian Institute of Public Health, Public Health Foundation of India</p>
+      <ul>
+        <li>Analyzed two rounds of the National Family Health Survey, NFHS-4 and NFHS-5.</li>
+        <li>Examined recent district-wise prevalence of teenage pregnancy.</li>
+      </ul>
+      <div class="methods"><span class="chip plain">NFHS-4</span><span class="chip plain">NFHS-5</span><span class="chip plain">District-level analysis</span></div>
+    </article>
+
+    <article class="project reveal">
+      <span class="tag">Summer Project &middot; 2023</span>
+      <h3>A National Level Analysis of Life Expectancy Associated with the COVID-19 Pandemic in India</h3>
+      <p class="meta">Ramadevi Women&rsquo;s University, Bhubaneswar</p>
+      <ul>
+        <li>Analyzed primary datasets to show a 43-day (0.12-year) decrease in life expectancy in 2020 due to COVID-19.</li>
+        <li>Findings were also written up as a conference paper (see Presentations).</li>
+      </ul>
+      <div class="methods"><span class="chip plain">Life expectancy</span><span class="chip plain">COVID-19</span><span class="chip plain">Mortality analysis</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="alt" id="experience" aria-labelledby="exp-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Professional and Teaching Experience</p>
+      <h2 id="exp-title">Current position</h2>
+    </div>
+    <article class="role reveal">
+      <div class="role-top">
+        <h3>Statistical Officer and Subject Matter Expert Instructor</h3>
+        <span class="dates">July 2025 &ndash; Present</span>
+      </div>
+      <p class="muted" style="margin:0">Hi-Tech Medical College &amp; Hospital (HMCH), Bhubaneswar, India</p>
+      <ul>
+        <li><strong>Statistical advisory and leadership support.</strong> Serve as statistical adviser to the Dean, Medical Superintendent, Director, and research leadership, providing analytical insights for research, institutional planning, and strategic decision-making.</li>
+        <li><strong>Research mentorship and data management.</strong> Guide students and researchers in research design, statistical analysis, and Family Adaptation Program (FAP) data management, strengthening evidence-based interpretation and scientific communication.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Technical Skills</p>
+      <h2 id="skills-title">Methods, software, and tools</h2>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-box reveal">
+        <h3>Statistical Methods</h3>
+        <div class="interest-list">
+          <span class="chip">Multilevel modeling</span><span class="chip">Multivariate analysis</span><span class="chip">Survival analysis</span><span class="chip">Clinical trials</span>
+        </div>
+      </div>
+      <div class="skill-box reveal">
+        <h3>Statistical Software</h3>
+        <div class="interest-list">
+          <span class="chip">R</span><span class="chip">Stata</span><span class="chip">SAS</span><span class="chip">Python</span><span class="chip">MLwiN</span><span class="chip">CSPro</span><span class="chip">Epi Info</span>
+        </div>
+      </div>
+      <div class="skill-box reveal">
+        <h3>Data Visualization and Analysis</h3>
+        <div class="interest-list">
+          <span class="chip">Power BI</span><span class="chip">Advanced Excel</span>
+        </div>
+      </div>
+      <div class="skill-box reveal">
+        <h3>Research Practice</h3>
+        <div class="interest-list">
+          <span class="chip plain">Study design</span><span class="chip plain">Epidemiological research</span><span class="chip plain">Health data analytics</span><span class="chip plain">Research mentorship</span><span class="chip plain">Scientific communication</span>
+        </div>
+      </div>
+      <div class="skill-box reveal">
+        <h3>Languages</h3>
+        <div class="interest-list">
+          <span class="chip plain">English</span><span class="chip plain">Hindi</span><span class="chip plain">Odia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECORD -->
+<section class="alt" id="records" aria-labelledby="records-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Presentations, Awards, and Certifications</p>
+      <h2 id="records-title">Academic record</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="record-group reveal">
+          <h3>Conference Papers and Presentations</h3>
+          <div class="record">
+            <span class="year">December 2024</span>
+            <p class="title">Breaking Barriers or Perpetuating Inequality? A Multilevel Logistic Regression Analysis of Antenatal Care Utilization in India Using NFHS Data</p>
+            <p class="detail">45th Annual Conference of the Indian Association for the Study of Population (IASP), New Delhi</p>
+          </div>
+          <div class="record">
+            <span class="year">March 2024</span>
+            <p class="title">Discerning the Impact of COVID-19 Pandemic on Life Expectancy in India</p>
+            <p class="detail">National Seminar on Data Driven Predictive Analytics &amp; Modeling (DDPAM 2024), Sambalpur University, Odisha</p>
+          </div>
+        </div>
+        <div class="record-group reveal" style="margin-top:44px">
+          <h3>Certifications and Examinations</h3>
+          <div class="record">
+            <span class="year">2026</span>
+            <p class="title">IELTS Academic</p>
+            <p class="detail">Qualified</p>
+          </div>
+          <div class="record">
+            <span class="year">2026</span>
+            <p class="title">IBM Quantum Computer Programming with Hands-On Coding</p>
+            <p class="detail">Quantum Class, London, UK</p>
+          </div>
+          <div class="record">
+            <span class="year">2025</span>
+            <p class="title">All-India UGC-NET</p>
+            <p class="detail">Qualified for eligibility for PhD programs in top universities in India</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="record-group reveal">
+          <h3>Honors, Fellowships, and Service</h3>
+          <div class="record">
+            <span class="year">2026</span>
+            <p class="title">Abhinav Surya Trust</p>
+            <p class="detail">Supporting this NGO, which works to improve education among India&rsquo;s indigenous population, through program and curriculum development and strategic growth initiatives.</p>
+          </div>
+          <div class="record">
+            <span class="year">2023 &ndash; 2025</span>
+            <p class="title">Institute Fellowship for M.Sc. studies</p>
+            <p class="detail">International Institute for Population Sciences (IIPS), Mumbai</p>
+          </div>
+          <div class="record">
+            <span class="year">2022</span>
+            <p class="title">National Training Program on Official Statistics</p>
+            <p class="detail">Represented Odisha; organized by the National Statistical System Training Academy (NSSTA), Greater Noida</p>
+          </div>
+          <div class="record">
+            <span class="year">2022</span>
+            <p class="title">National Quiz Competitions on Official Statistics</p>
+            <p class="detail">Represented Ramadevi Women&rsquo;s University; organized by the National Statistical Office, Ministry of Statistics and Programme Implementation</p>
+          </div>
+        </div>
+        <div class="record-group reveal" style="margin-top:44px">
+          <h3>Seminars</h3>
+          <div class="record">
+            <span class="year">2023</span>
+            <p class="title">Physics and Data Science Seminar</p>
+            <p class="detail">Participant; organized by Homi Bhabha National Institute and the Institute of Physics, Bhubaneswar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-box reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Let&rsquo;s connect</h2>
+      <p>I welcome conversations with prospective supervisors and admissions committees about doctoral research in epidemiology. My CV is available below.</p>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:preranap274@gmail.com">preranap274@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/prerana-priyadarshini" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="cv.pdf" target="_blank" rel="noopener">View CV</a>
+        <a class="btn ghost" href="cv.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    &copy; <span id="year">2026</span> S Prerana Priyadarshini &middot; Bhubaneswar, India
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+
+  // Mobile menu
+  var toggle=document.getElementById('menuToggle');
+  var menu=document.getElementById('menu');
+  function closeMenu(){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');}
+  toggle.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A')closeMenu();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeMenu();toggle.focus();}});
+  window.addEventListener('resize',function(){if(window.innerWidth>900)closeMenu();});
+
+  // Footer year
+  var y=document.getElementById('year');
+  if(y)y.textContent=new Date().getFullYear();
+
+  // Reveal on scroll
+  var items=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    items.forEach(function(el){io.observe(el);});
+  }else{
+    items.forEach(function(el){el.classList.add('in');});
+  }
+
+  // Active nav link
+  var links=Array.prototype.slice.call(document.querySelectorAll('.menu a'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function setActive(){
+    var pos=window.scrollY+120,current=0;
+    sections.forEach(function(s,i){if(s&&s.offsetTop<=pos)current=i;});
+    links.forEach(function(a,i){
+      if(i===current){a.classList.add('active');a.setAttribute('aria-current','true');}
+      else{a.classList.remove('active');a.removeAttribute('aria-current');}
+    });
+  }
+  window.addEventListener('scroll',setActive,{passive:true});
+  setActive();
+})();
+</script>
+</body>
+</html>
